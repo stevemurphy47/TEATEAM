@@ -1,0 +1,299 @@
+
+/* tinnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn tuccccccccccccccccccccccccccccccccccccc */
+    ul.list_product li {
+        width: 30%;
+        margin: 5px 5px;
+        text-align: center;
+        float: left;
+        height: 490px;
+    }
+   
+    .img_tt {
+        width: 100%;
+        height: 300px;
+    }
+    p.navbar-text.pull-right {
+        list-style: none;
+       padding-left: 10px;
+    }
+    .containerBV {
+        height: auto;
+        width: 70%;
+        margin: 0 auto;
+        background-color: #fff;
+        float: right;
+        margin-right: 100px;
+    }
+    p.navbar-text.pull-right a{
+        text-decoration: none;
+        font: size 2rem;
+    }
+    
+    :root{
+        --color1:orange;
+    }
+    * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        font-family: 'baloo chettan 2', cursive;
+    }
+    li{
+        list-style: none;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+    a{
+        text-decoration: none;
+    }
+
+
+  
+/* tinnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn tuccccccccccccccccccccccccccccccccccccc */
+
+    header{
+        width: 100%;
+        height: 100px;
+        background: url(./anhvavideo/img1.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+    header::before{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        content: "";
+        display: block;
+        background: rgba(0,0,0,0.5);
+    }
+    header input{
+        width:50px;
+        height:50px;
+        position: absolute;
+        top:0px;
+        left:12px;
+        opacity: 0;
+        z-index: 2;
+        cursor: pointer;
+        position:fixed;
+    }
+    header input:checked ~ .menu-icon .menu-bar::before{
+        transform: rotate(90deg);
+        top:0;
+    }
+    header input:checked ~ .menu-icon .menu-bar::after{
+        transform: rotate(90deg);
+        top:0;
+    }
+    header input:checked ~ .menu-icon .menu-bar{
+        transform: rotate(120deg);
+        transition: 0.2s;
+    }
+    header input:checked ~ .menu-item{
+        right:0;
+    }
+
+    /* footer */
+    .footer{
+        float: left;
+    }
+    .footer {
+        background-color: #91cfa2;
+        width: 100%;
+        text-align: center;
+        height: 80px;
+        /* align-items: center; */
+        padding-top: 24px;
+    }
+    .menu-icon{
+        width:50px;
+        height:50px;
+        position: absolute;
+        top:12px;
+        left:12px;
+        opacity: 1;
+        z-index: 1;
+        cursor: pointer;
+        position:fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .menu-bar{
+        height: 4px;
+        width:100px;
+        background: var(--color1);
+        position: relative;
+    }
+    .menu-bar::before{
+        content: "";
+        display: block;
+        height: 4px;
+        width:100px;
+        background: var(--color1);
+        position: absolute;
+        top:-14px;
+    }
+    .menu-bar::after{
+        content: "";
+        display: block;
+        height: 4px;
+        width:100px;
+        background: var(--color1);
+        position: absolute;
+        top:14px;
+    }
+    .menu-item{
+        position: fixed;
+        width: 248px;
+        height: 100vh;
+        background: rgba(0,0,0,0.7);
+        top: 0;
+        right:-100%;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+        flex-direction: column;
+        transition: 0.5s;
+    }
+    .menu-item li{
+        line-height: 40px;
+    }
+    .menu-item li a{
+        color: pink;
+    }
+    .header-text{
+        position: absolute;
+    }
+    .header-text h1{
+        font-size: 30px;
+        color: pink;
+        margin-bottom: 30px;
+    }
+    .header-text a{
+        padding: 15px 40px;
+        background: plum;
+        color: white;   
+        border-radius: 50px;
+        font-size: 20px;
+        opacity: 0.3;
+        animation: headerAnimation;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        transition: 0.5s;
+    }
+    .header-text a:hover{
+        background: transparent;
+        color: pink;
+        border: 2px solid pink;
+    }
+    .header-text {
+        position: absolute;
+        color: white;
+        font-size: 50px;
+    }
+    @keyframes headerAnimation{
+        0%{
+            opacity: 0.5;
+        }
+        50%{
+            opacity: 1;
+        }
+        100%{
+           opacity: 0.5;
+        }
+    }
+    * {
+        margin:0px;
+        padding:0px;
+    }
+    .clearfix:after {
+        display:block;
+        clear:both;          
+    }
+    .wrapper {
+        width:100%;
+        box-shadow:0px 1px 3px rgba(0,0,0,0.2); 
+        background:#3e3436;
+    }
+     
+    /*----- Phần menu -----*/
+    .menu {
+        width:1000px;
+        margin:0px auto;
+        background:#bf5c71;
+        height: 50px;
+        margin-top: 150px;
+    }
+    .menu li {
+        margin:0px;
+        list-style:none;
+        font-family:'Ek Mukta';
+    }
+    .menu a {
+        transition:all linear 0.15s;
+        color:#919191;
+        text-decoration:none;
+    }
+    .menu li:hover > a, .menu .current-item > a {
+        text-decoration:none;
+        color:#be5b70;
+    } 
+    .menu .arrow {
+        font-size:11px;
+        line-height:0%;
+    } 
+    /*----- css cho phần menu cha -----*/
+    .menu > ul > li {
+       
+        display:inline-block;
+        position:relative;
+        font-size:19px;
+    }
+    .menu > ul > li > a {
+        padding:10px 40px;
+        display:inline-block;
+        color:white;
+    }
+    .menu > ul > li:hover > a, .menu > ul > .current-item > a {
+        background:#2e2728;
+    }
+    /*----css cho menu con----*/
+    .menu li:hover .sub-menu {
+        z-index:1;
+        opacity:1;
+    }
+    .sub-menu {
+        width:160%;
+        padding:5px 0px;
+        position:absolute;
+        top:100%;
+        left:0px;
+        z-index:-1;
+        opacity:0;
+        transition:opacity linear 0.15s;
+        box-shadow:0px 2px 3px rgba(0,0,0,0.2);
+        background:#2e2728;
+    }
+    .sub-menu li {
+        display:block;
+        font-size:16px;
+    }
+    .sub-menu li a {
+        padding:10px 30px;
+        display:block;
+    }
+    .sub-menu li a:hover, .sub-menu .current-item a {
+        background:#3e3436;
+    }
+   .danhmucbv a.tdm {
+    color: black;
+}

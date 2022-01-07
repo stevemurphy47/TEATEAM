@@ -1,0 +1,812 @@
+body{
+	font-family: Barlow;
+}
+.item{
+	background: white;
+	width: 20%;
+	height: 100%;
+	float: left;
+	border: 1px;
+	    box-shadow: 0 2px 7px 0 rgb(0 0 0 / 10%);
+	   margin-right: 10px;
+}
+.list-product{
+
+	width: 57%;
+	height: 1000px;
+	float: left;
+}
+.menu{
+	background:lightgrey;
+
+	width: 20%;
+	height: auto;
+	float: left;
+	margin-left: 10px;
+}
+header.sroll {
+    background-color: #d4e169;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.login {
+    border: 1px ;
+    text-align: center;
+    align-self: center;
+    width: 120px;
+    border-radius: 20px;
+    background: whitesmoke;
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+}
+.content {
+    width: 1200px;
+    margin: auto;
+    padding-top: 10px;
+}
+ input.find-c {
+   border-radius: 30px;
+    width: 380px;
+    background-image: url(../../img/icon-find.png);
+    background-repeat: no-repeat;
+    background-size: 22px 20px;
+    background-position: 1px 4px;
+    padding: 0 20px 0 20px;
+    height: 32px;
+}
+.form {
+    border: 1px solid;
+    position: relative;
+    width: 100%;
+    background: #d4e169;
+    margin: auto;
+}
+form#form-login {
+    display: block;
+    position: relative;
+    z-index: 2;
+    top: 30px;
+}
+.icon {
+    cursor: pointer;
+    align-self: center;
+    margin-left: 20px;
+}
+.item-all {
+    border-bottom: 1px ;
+    padding-left: 20px;
+    text-transform: uppercase;
+    font-size: 18px;
+    border-bottom: 1px solid #ddd;
+}
+.item-cat {
+    border: 1px ;
+    padding: 5 10px;
+    width: 218px;
+    display: flex;
+    justify-content: space-between;
+    font-family: Barlow;
+    cursor: pointer;
+}
+.formdangnhap {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.6);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    overflow: hidden;
+}
+.formdangnhap1 {
+    width: 400px;
+    height: 300px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+        flex-direction: column;
+}
+.formdangnhap1 img {
+    width: 100px;
+    position: absolute;
+    top: 15px;
+    border-radius: 50px;
+}
+.login1 {
+    border: 1px ;
+    text-align: center;
+    align-self: center;
+    width: 120px;
+    border-radius: 20px;
+    background: whitesmoke;
+    cursor: pointer;
+}
+.taotk {
+    width: 500px;
+    height: 500px;
+    background-color: wheat;
+    border-radius: 10px;
+     text-align: center;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    flex-direction: column;
+    display: none;
+
+}
+form.formtaotk {
+    /* text-align: left; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.formtaotk input {
+    /* border: 1px solid; */
+    border-radius: 5px;
+    height: 30px;
+}
+.formtaotk button {
+    margin: auto;
+    height: 30px;
+    cursor: pointer;
+    color: black;
+    transition-duration: 0.4s;
+
+    /* background-color: blue; */
+}
+.formtaotk button:hover {
+    background-color: black;
+    opacity: 0.9;
+}
+span#ghitk{
+    color: red;
+    font-weight: 800;
+}
+span#ghimk{
+    color: red;
+    font-weight: 800;
+}
+span#ghimk1{
+    color: red;
+    font-weight: 800;
+}
+span#ghisdt{
+    color: red;
+    font-weight: 800;
+}
+div#button {
+    position: absolute;
+    bottom: 10px;
+}
+.price-product {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: monospace;
+    color: wheat;
+
+}
+.title-product {
+    height: 110px;
+        background: cornsilk;
+    margin-top: 60px;
+    position: relative;
+    transition: transform 250ms;
+
+
+}
+.product:hover .title-product {
+
+    transform: translateY(-44px);
+}
+.product:hover .product-img {
+    transform: scale3d(1.1, 1.1, 1.1);
+    transition: 0.2s;
+}
+.name-product {
+    text-align: center;
+    font-size: 20px;
+    font-family: Muli;
+    font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+        padding-top: 5px;
+}
+.product {
+    height: 390px;
+    width: 35%;
+    padding-top: 10px;
+    margin: 20px;
+    overflow: hidden;
+    z-index: 2;
+    float:left;
+    margin-left: 60px;
+    border: 1px ;
+    border-bottom-width: thick;
+    border-right: inset;
+    transition: transform 250ms;
+}
+.product-img img {
+    width: 100%;
+    height: 270px;
+}
+.product-img {
+    background: cornsilk;
+    position: relative;
+}
+.btn-one {
+    text-align: center;
+    border: 1px solid brown;
+    padding: 10px 20px;
+    width: max-content;
+    margin: auto;
+    background: wheat;
+    cursor: pointer;
+    display: flex;
+  }
+a.btn-click {
+    width: fit-content;
+    color: black;
+    font-size: unset;
+    font-weight: 600;
+    text-decoration: none;
+}
+p.tieudehoadon-1 {
+    font-weight: 700;
+}
+.soluong{
+    display: flex;
+    padding-left: 15px;
+    top: 200px;
+    right: 280px;
+}
+input#tanggiam {
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.text {
+    width: fit-content;
+    width: 20px;
+    border: none;
+    text-align: center;
+}
+.tieudehoadon1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+        align-items: baseline;
+}
+.product-order {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: baseline;
+    border: 1px;
+    border-radius: 8px;
+    box-shadow: 0 0 12px 0 rgb(0 0 0 / 20%);
+}
+input.btn-xoaorder {
+    height: 20px;
+    cursor: pointer;
+}
+.btn-soluong {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+}
+.formtobuy{
+     height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+    display: none;
+}
+.formtobuy1 {
+    width: 600px;
+    height: 600px;
+    background-color: white;
+    border-radius: 10px;
+    
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    
+    position: relative;
+    overflow: hidden;
+    overflow-y: scroll; 
+}
+.formthongtin {
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+}
+.right-formthongtin {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.ten-form {
+    padding-left: 15px;
+    font-family: "BalooExtra", Helvetica, Arial, sans-serif !important;
+    font-size: x-large;
+    padding-top: 10px;
+    color: #2b2727;
+    font-weight: 600;
+    position: absolute;
+    top: 30px;
+    border: none;
+    pointer-events: none;
+}
+.gia-form {
+    padding-left: 15px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.soluong{
+    display: flex;
+    padding-left: 15px;
+    position: absolute;
+    top: 200px;
+    right: 280px;
+}
+.btn-tru {
+    padding-left: 15px;
+    padding-right: 10px;
+}
+button.tru {
+    border: 1px;
+    border-radius: 10px;
+    background: skyblue;
+    cursor: pointer;
+}
+button.cong {
+    border: 1px;
+    border-radius: 10px;
+    background: skyblue;
+    cursor: pointer;
+}
+form.form-order {
+    display: flex;
+    flex-direction: column;
+    width: 370px;
+    flex-wrap: wrap;
+    align-content: stretch;
+}
+p.order-tieude {
+    border: 1px;
+    border-radius: 4px;
+    height: 20px;
+    box-shadow: 0 0 12px 0 rgb(0 0 0 / 20%);
+}
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: grey;
+}
+::-webkit-scrollbar-thumb{
+    background: lightgrey;
+    border-radius: 5px;
+    width: 5px;
+    height: 5px;
+    border:3px solid transparent;
+    
+
+}
+.text {
+    width: fit-content;
+    width: 20px;
+    border: none;
+    text-align: center;
+}
+input#tanggiam {
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn-mua {
+    width: 50px;
+    display: flex;
+    align-content: stretch;
+    justify-content: center;
+    position: absolute;
+    right: 280px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 5px;
+    background: wheat;
+    height: 30px;
+}
+.btn-mua:hover {
+    background: #eff5df;
+    transition-duration: 0.3s;
+}
+.loailanh{
+    display: none;
+}
+div#tatorder {
+    position: absolute;
+    right: 10px;
+    border: 1px;
+    border-radius: 5px;
+    background: #ecebeb;
+    cursor: pointer;
+
+}
+a.taikhoan:hover {
+    color: white;
+}
+a.taikhoan {
+    text-decoration: none;
+}
+button.button {
+    cursor: pointer;
+}
+.login-order a {
+    text-decoration: none;
+    color: black;
+}
+button.btn-thanhtoan {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    border-radius: 10px;
+    height: 20px;
+}
+.tieude-form {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+button.tieude-form1 {
+    border: 1px solid;
+    width: 100%;
+    border-radius: 10px;
+    background-color: wheat;
+}
+.form-donhang {
+    height: 500px;
+    background-color: #c4b6b6;
+    width: 45%;
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-right: 20px;
+    padding: 30px;
+}
+.bill-donhang {
+       background-color: #c4b6b6;
+    width: 40%;
+    height: auto;
+    margin-top: 10px;
+    margin-left: 100px;
+}
+.form-end {
+    display: flex;
+}
+.an-location {
+    display: none;
+}
+.input-form {
+    padding: 10px 0;
+    margin: 0 20px;
+    border-bottom: 1px solid #f1f1f1;
+    display: flex;
+    align-items: center;
+}
+.input-bill {
+    border: none;
+    width: 100%;
+}
+.input-bill {
+    border: none;
+    width: 100%;
+    margin: 10px;
+    background: left;
+    outline: none;
+}
+.cuahang {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 50px;
+    border-bottom: 1px solid #f1f1f1;
+}
+select#mySelect {
+    border: none;
+    outline: none;
+}
+.hinhanh-product img {
+  height: 80px;
+    width: 120px;
+}
+.hinhanh-product {
+   padding-left: 10px;
+   display: flex;
+    align-items: center;
+}
+.productorder {
+    display: flex;
+       flex-direction: row;
+        border-bottom: 1px solid #f1f1f1;
+}
+.thongtin-product {
+    padding-left: 10px;
+    padding: 10px;
+}
+.topping-product {
+    font-size: 13px;
+    padding-left: 5px;
+    color: #7c7c7c;
+}
+.ten-product {
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+.gia-product {
+    font-size: 13px;
+    padding-left: 5px;
+    padding-top: 3px;
+    font-weight: bold;
+    color: #8a733f;
+}
+.thongke-tien {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 20px;
+}
+.thongke-gia{
+    font-weight: bold;
+}
+.input-ship {
+    border: none;
+    outline: none;
+    background: left;
+    width: 60px;
+}
+input#submitend {
+    width: 80%;
+    border: 1px;
+    border-radius: 30px;
+    outline: none;
+    background: wheat;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+input#tieptucmua{
+     width: 80%;
+    border: 1px;
+    border-radius: 30px;
+    outline: none;
+    background: wheat;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    margin-top:30px;
+}
+.btn-end {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.chonthongtin {
+    background: #ededf3 ;
+    width: 250px;
+    height: 1000px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-top: 30px;
+    float: left;
+}
+.thongtinchon {
+    background: #ededf3;
+    height: 1000px;
+    width: 900px;
+    float: left;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.list-thongtin {
+    margin: auto;
+    height: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    cursor: pointer;
+    width: 200px;
+    border-bottom: 1px solid #adaaaa;
+}
+.list-thongtin1 {
+    margin: auto;
+    height: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    cursor: pointer;
+    width: 200px;
+    border-bottom: 1px solid #adaaaa;
+}
+.list-thongtin2 {
+    margin: auto;
+    height: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    cursor: pointer;
+    width: 200px;
+    border-bottom: 1px solid #adaaaa;
+}
+.list1 {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: auto;
+}
+.list-thongtin a {
+    text-decoration: none;
+}
+.list-thongtin:hover {
+    background: white;
+}
+.list-thongtin1:hover {
+    background: white;
+}
+.list-thongtin2:hover {
+    background: white;
+}
+.thongtin {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    align-items: flex-end;
+}
+input.input-thongtin {
+    width: 700px;
+    border: none;
+    height: 20px;
+    outline: none;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+.title-thongtin {
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 30px;
+}
+p.thongtin-p {
+    margin-right: 50px;
+}
+p.thongtin-p1 {
+    margin-left: 75px;
+}
+input.radio-name {
+    margin-left: 20px;
+}
+.action-kh {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input.button-kh {
+    margin: 10px;
+    cursor: pointer;
+}
+.hoadon-tieude {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+.hoadon-tieude1 {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+.hoadontieude {
+    background: lightskyblue;
+    height: 50px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hoadontieude1 {
+    word-wrap: break-word;
+    background: lightskyblue;
+    height: auto;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.thongtinhoadon {
+    width: 200px;
+    background: whitesmoke;
+    word-wrap: break-word;
+    border-bottom: 1px solid #adaaaa;
+}
+.thongtinhoadon1 {
+    width: 200px;
+    background: whitesmoke;
+    word-wrap: break-word;
+    display: flex;
+    border-bottom: 1px solid #adaaaa;
+    align-items: center;
+    justify-content: center;
+}
+.list-header {
+    display: flex;
+    justify-content: space-evenly;
+}
+.listheader {
+    background: #ededf3 ;
+    width: 200px;
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+.listheader:hover {
+    background: #cecaca;
+}
+input.button-kh1 {
+    margin: 50px;
+    margin-left: 400px;
+    cursor: pointer;
+}
+.left-formthongtin img {
+    width: 225px;
+    height: 225px;
+}
+.btn-mua1 {
+    width: 70px;
+    display: flex;
+    align-content: stretch;
+    justify-content: center;
+    position: absolute;
+    right: 200px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 5px;
+    background: wheat;
+    height: 30px;
+}
+.btn-mua1:hover {
+    background: #eff5df;
+    transition-duration: 0.3s;
+}
